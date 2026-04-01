@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-theme: rgb(186, 34, 34);
+    --color-theme-foreground: rgb(218, 56, 56);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --font-slabo: var(--font-slabo-27px);
+    --font-nunito-sans: var(--font-nunito-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
