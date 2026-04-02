@@ -2,9 +2,9 @@
 
 git pull
 
-old_container=$(docker ps -a -q --filter ancestor=mbmt)
+old_container=$(docker ps -a -q --filter ancestor=mbmt-frontend)
 
-old_image=$(docker images -q mbmt)
+old_image=$(docker images -q mbmt-frontend)
 
 #docker rm $(docker stop $(docker ps -a -q  --filter ancestor=mbmt))
 
