@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
-import { Geist_Mono, Nunito_Sans, Slabo_27px } from "next/font/google";
+import { Geist, Geist_Mono, Nunito_Sans, Slabo_27px } from "next/font/google";
 import "./globals.css";
-import Main from "@/components/Main";
 import Navbar from "@/components/Navbar";
+
+const geistSans = Geist({
+    variable: "--font-geist-sans",
+    subsets: ["latin"],
+});
 
 const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
@@ -20,7 +23,7 @@ const nunitoSans = Nunito_Sans({
     subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
     title: "MBMT",
     description: "Montgomery Blair Math Tournament",
 };
@@ -31,13 +34,16 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html
-            lang="en"
-            className={`${geistMono.variable} ${slabo27px.variable} ${nunitoSans.variable} h-full antialiased`}
-        >
-            <body className="min-h-full flex flex-col">
-                <Navbar />
-                <Main>{children}</Main>
+        <html lang="en">
+            <body
+                className={`${geistSans.variable} ${geistMono.variable} ${slabo27px.variable} ${nunitoSans.variable} antialiased`}
+            >
+                <div className="min-h-screen w-full flex flex-col font-nunito-sans">
+                    <Navbar />
+                    <main className="flex flex-col flex-1 bg-background">
+                        {children}
+                    </main>
+                </div>
             </body>
         </html>
     );
