@@ -8,11 +8,11 @@ old_image=$(docker images -q mbmt)
 
 #docker rm $(docker stop $(docker ps -a -q  --filter ancestor=mbmt))
 
-docker build . -t mbmt --no-cache
+docker build . -t mbmt-frontend --no-cache
 
 docker stop $old_container
 
-docker run --restart unless-stopped -d -p 19230:19230 mbmt
+docker run --restart unless-stopped -d -p 19230:19230 mbmt-frontend
 
 docker rm $old_container
 
