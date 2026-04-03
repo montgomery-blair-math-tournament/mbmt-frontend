@@ -5,6 +5,7 @@
     --foreground: #1a1a1a;
     --link: var(--color-blue-600);
     --theme: #b92222;
+    --theme-other: #6c1414;
     --theme-foreground: #971c1c;
 }
 
@@ -14,6 +15,7 @@
         --foreground: #dedede;
         --link: var(--color-blue-400);
         --theme: #6c1414;
+        --theme-other: #b92222;
         --theme-foreground: #971c1c;
     }
 }
@@ -22,6 +24,7 @@
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-theme: var(--theme);
+    --color-theme-other: var(--theme-other);
     --color-theme-foreground: var(--theme-foreground);
     --color-link: var(--link);
     --font-sans: var(--font-geist-sans);
