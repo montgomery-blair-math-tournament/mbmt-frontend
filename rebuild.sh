@@ -2,17 +2,17 @@
 
 git pull
 
-old_container=$(docker ps -a -q --filter ancestor=mbmt-frontend)
+old_container=$(docker ps -a -q --filter ancestor=mbmtfrontend)
 
-old_image=$(docker images -q mbmt-frontend)
+old_image=$(docker images -q mbmtfrontend)
 
 #docker rm $(docker stop $(docker ps -a -q  --filter ancestor=mbmt))
 
-docker build . -t mbmt-frontend --no-cache
+docker build . -t mbmtfrontend --no-cache
 
 docker stop $old_container
 
-docker run --restart unless-stopped -d -p 19230:19230 mbmt-frontend
+docker run --restart unless-stopped -d -p 12890:12890 mbmtfrontend
 
 docker rm $old_container
 

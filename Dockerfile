@@ -33,8 +33,8 @@ COPY --from=builder /app/package.json ./package.json
 
 USER nextjs
 
-EXPOSE 19230
+EXPOSE 12890
 
-ENV PORT=19230
+ENV PORT=12890
 
 CMD ["pnpm", "start"]
