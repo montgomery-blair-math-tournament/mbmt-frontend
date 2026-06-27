@@ -15,11 +15,11 @@ export default function ArchivePage() {
                 second.
             </p>
 
-            <div className="overflow-x-scroll w-full">
+            <div className="overflow-x-auto w-full">
                 <table className="border-collapse w-full border-0">
                     {/* header */}
                     <thead>
-                        <tr className="font-bold select-none bg-theme/50 dark:bg-theme/90">
+                        <tr className="font-bold select-none bg-theme/50">
                             <td className="p-2">Year</td>
                             <td className="p-2">Division</td>
                             <td className="p-2">Algebra</td>
@@ -36,7 +36,7 @@ export default function ArchivePage() {
                     {pastTests.map((p) => (
                         <tbody
                             key={p.year}
-                            className="odd:bg-gray-200 bg-gray-100 dark:odd:bg-gray-800 dark:bg-gray-900 dark:hover:bg-theme/50 odd:dark:hover:bg-theme/50 hover:bg-theme/20 odd:hover:bg-theme/20 transition-colors"
+                            className="odd:bg-gray-300 bg-gray-200"
                         >
                             <tr>
                                 <td
