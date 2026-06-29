@@ -2,7 +2,7 @@ const pastTests = [
     {
         year: "2026",
         tests: ["algebra", "geometry", "counting", "nt", "team", "guts"],
-        divisions: ["Jacobi", "Abel"],
+        divisions: ["Abel", "Jacobi"],
     },
     {
         year: "2025",
