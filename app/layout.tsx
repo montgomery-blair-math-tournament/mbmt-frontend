@@ -37,6 +37,7 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} ${slabo27px.variable} ${nunitoSans.variable} antialiased`}
+                suppressHydrationWarning
             >
                 <div className="min-h-screen w-full flex flex-col font-nunito-sans">
                     <Navbar />

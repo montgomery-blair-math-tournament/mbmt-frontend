@@ -41,7 +41,13 @@ export const writers = [
 ];
 
 export const staff = [
-    ["Kele Zhang", "Reanna Jin", "Ashley Zhang"],
-    ["Alex Zhao", "Evan Zhang", "Sam Easaw"],
-    ["Justin Jiang", "Jessica Hsieh", "Manil Singh-Prasad"],
+    "Kele Zhang",
+    "Reanna Jin",
+    "Ashley Zhang",
+    "Alex Zhao",
+    "Evan Zhang",
+    "Sam Easaw",
+    "Justin Jiang",
+    "Jessica Hsieh",
+    "Manil Singh-Prasad",
 ];

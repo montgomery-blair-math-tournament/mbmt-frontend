@@ -14,7 +14,7 @@ export default function RulesPage() {
             <Heading level={1}>Official Rules</Heading>
 
             <p>
-                <i>Last updated 02/15/2026</i>
+                <i>Last updated 07/01/2026</i>
             </p>
 
             <p>
@@ -83,17 +83,17 @@ export default function RulesPage() {
             <Heading level={2}>Round Format</Heading>
             <ol className="list-decimal ml-4">
                 <li>
-                    The <b>Individual round</b> consists of two tests, each with
+                    The <b>Individual Round</b> consists of two tests, each with
                     eight questions and lasting thirty minutes. Individual Tests
                     are on two subjects among <b>Algebra</b>, <b>Geometry</b>,{" "}
                     <b>Counting and Probability</b>, and <b>Number Theory</b>.
                 </li>
                 <li>
-                    The <b>Team round</b> contains fifteen questions for all
+                    The <b>Team Round</b> contains fifteen questions for all
                     team members to collaboratively solve in 45 minutes.
                 </li>
                 <li>
-                    The <b>Guts round</b> is an intense but exciting round in
+                    The <b>Guts Round</b> is an intense but exciting round in
                     which competing teams can see each others’ progress. It is
                     60 minutes long, is graded live, and requires each team to
                     work together on progressively harder five-problem sets.
@@ -112,11 +112,11 @@ export default function RulesPage() {
                     to more accurately reflect difficulty.
                 </li>
                 <li>
-                    The <b>Fun round</b> is an exciting round consisting of
+                    The <b>Fun Round</b> is an exciting round consisting of
                     several separate mini-events, including puzzles, trivia, and
-                    an estimation round. This round is purely for enjoyment and{" "}
-                    <b>winners will not receive awards</b> (though fun swag can
-                    be won during Fun round) .
+                    an estimation round. This round is purely for enjoyment and
+                    winners will not receive awards (though fun swag can be won
+                    during the round).
                 </li>
             </ol>
 
@@ -176,33 +176,33 @@ export default function RulesPage() {
             <Heading level={2}>Important Terminology</Heading>
             <ol className="list-decimal ml-4">
                 <li>
-                    A circle is <b>inscribed</b> in a shape if it touches each
+                    A circle is <i>inscribed </i> in a shape if it touches each
                     side of the shape at one point and is inside the shape. A
                     circle that is inscribed in a triangle is called the
-                    triangle&apos;s <b>incircle</b>. A circle is{" "}
-                    <b>circumscribed</b> about a shape if each vertex of the
+                    triangle&apos;s <i>incircle</i>. A circle is{" "}
+                    <i>circumscribed </i>about a shape if each vertex of the
                     shape lies on the circle. A circle that is circumscribed
                     about a triangle is called the triangle&apos;s{" "}
-                    <b>circumcircle</b>.
+                    <i>circumcircle</i>.
                 </li>
                 <li>
-                    The <b>multiples</b> of a number are the positive numbers
+                    The <i>multiples</i> of a number are the positive numbers
                     that divide into it evenly. For example, the multiples of 3
                     are <Math eq="3" />, <Math eq="6" />, <Math eq="9" />,{" "}
-                    <Math eq="12" />, and so on. The <b>factors</b> or{" "}
-                    <b>divisors</b> of a number are the positive numbers that it
+                    <Math eq="12" />, and so on. The <i>factors</i> or{" "}
+                    <i>divisors</i> of a number are the positive numbers that it
                     divides into evenly. For example, the factors of{" "}
                     <Math eq="6" /> are <Math eq="1" />, <Math eq="2" />,{" "}
                     <Math eq="3" />, and <Math eq="6" />.
                 </li>
                 <li>
                     If two numbers or objects are selected{" "}
-                    <b>independently and at random</b>, this means that they are
+                    <i>independently and at random</i>, this means that they are
                     selected at random, and that how one is selected
                     doesn&apos;t affect how the other is selected.
                 </li>
                 <li>
-                    A <b>real number</b> is a rational number or an irrational
+                    A <i>real number</i> is a rational number or an irrational
                     number. <Math eq="-1" />, <Math eq="2.5" />, and{" "}
                     <Math eq="\pi" /> are all real numbers. Unless you&apos;ve
                     learned about complex numbers, every number you know of is a

@@ -24,7 +24,7 @@ const sponsorList: {
         width: 200,
     },
     {
-        name: "HRT",
+        name: "Hudson River Trading",
         image: HRTImage,
         link: "https://www.hudsonrivertrading.com/",
         width: 600,

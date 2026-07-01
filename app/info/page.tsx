@@ -9,7 +9,7 @@ export default function InfoPage() {
         <Main>
             <Heading level={1}>Contest Information</Heading>
             <p>
-                <i>Last updated 02/15/2026</i>
+                <i>Last updated 07/01/2026</i>
             </p>
 
             <p>
@@ -17,38 +17,30 @@ export default function InfoPage() {
                 excite students’ interests in mathematics and in pursuing
                 mathematics beyond the school curriculum. We are pleased to
                 announce that, for the 2026 year, the Montgomery Blair Math Team
-                is hosting the 11th Montgomery Blair Math Tournament (MBMT 11)
-                on March 8th, 2026!
+                hosted the 11th Montgomery Blair Math Tournament (MBMT 11) on
+                March 8th, 2026!
             </p>
 
             <Heading level={2}>Registration</Heading>
             <p>
-                Registration will open on <b>Wednesday, December 17th, 2025</b>.
-                We would like all math team sponsors to register their teams by{" "}
-                <b>Saturday, February 7th, 2026</b>. This will help us estimate
-                the number of teams participating and assist us with logistics.
-                Please note that if you don’t register by this date, you may not
-                receive our free swag. To register, visit{" "}
-                <Link href="/register">the registration page here</Link>. For
-                more details on registration, see our{" "}
-                <Link href="/rules">rules page</Link>.
+                Registration opened on <b>Wednesday, December 17th, 2025</b>,
+                and closed on <b>Saturday, February 7th, 2026</b>.
             </p>
 
             <Heading level={2}>Logistics</Heading>
             <p>
-                MBMT 11 will occur at Montgomery Blair High School on Sunday,
+                MBMT 11 occurred at Montgomery Blair High School on Sunday,
                 March 8th, 2026 from 11:00 am - 5:00 pm. Our address is{" "}
                 <Link href="https://goo.gl/maps/QUudw1ir4JPsHSL98">
                     51 University Blvd E, Silver Spring, MD 20901
                 </Link>
-                . Please arrive on the University Boulevard side of the school.
-                Thanks to the generosity of the{" "}
+                . Thanks to the generosity of the{" "}
                 <Link href="https://www.montgomeryschoolsmd.org/departments/food-and-nutrition/">
                     MCPS Division of Food & Nutrition Services
                 </Link>
-                , <b>free</b> lunch will be provided to all competitors and
-                coaches. Coaches and participants are encouraged to bring snacks
-                for their teams.
+                , <b>free</b> lunch was provided to all competitors and coaches.
+                Coaches and participants are encouraged to bring snacks for
+                their teams.
             </p>
 
             <Heading level={2}>Contest</Heading>
@@ -169,7 +161,7 @@ export default function InfoPage() {
                 <Link href="mailto:Jeremy_R_Schwartz@mcpsmd.org">
                     Jeremy_R_Schwartz@mcpsmd.org
                 </Link>
-                . We look forward to seeing you and your Mathletes at this
+                . We look forward to seeing you and your Mathletes at next
                 year&apos;s MBMT!
             </p>
         </Main>

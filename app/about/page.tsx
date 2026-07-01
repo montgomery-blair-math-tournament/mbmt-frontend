@@ -2,12 +2,11 @@ import Main from "@/components/Main";
 import Heading from "@/components/Heading";
 import Image from "next/image";
 import sponsorList from "@/lib/constants/sponsorList";
-import { writers, staff } from "@/lib/constants/people";
 import Link from "@/components/Link";
+import { writers, staff } from "@/lib/constants/people";
 import { REPO_LINK } from "@/lib/constants/settings";
 
-const getShuffledStaff = () =>
-    staff.map((row) => [...row].sort(() => Math.random() - 0.5));
+const getShuffledStaff = () => [...staff].sort(() => Math.random() - 0.5);
 const getShuffledWriters = () => [...writers].sort(() => Math.random() - 0.5);
 
 export const dynamic = "force-dynamic";
@@ -15,6 +14,7 @@ export const dynamic = "force-dynamic";
 export default function AboutPage() {
     const shuffledStaff = getShuffledStaff();
     const shuffledWriters = getShuffledWriters();
+
     return (
         <Main>
             <Heading level={1}>About Us</Heading>
@@ -25,26 +25,18 @@ export default function AboutPage() {
             </p>
 
             <Heading level={2}>Contest Organizers</Heading>
-            <table className="text-center text-xl w-full">
-                <tbody>
-                    {shuffledStaff.map((row, i) => (
-                        <tr key={i} className="flex">
-                            {row.map((person, j) => (
-                                <td key={j} className="text-xl pb-2 flex-1">
-                                    {person}
-                                </td>
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <ul className="text-center text-xl grid sm:grid-cols-3 grid-cols-1 gap-2">
+                {shuffledStaff.map((person, i) => (
+                    <li key={i}>{person}</li>
+                ))}
+            </ul>
 
             <Heading level={2}>Problem Writers</Heading>
             <p>
                 We&apos;re very thankful to our problem writers, without whom we
                 wouldn&apos;t have a contest:
             </p>
-            <ul className="columns-5 text-center">
+            <ul className="lg:columns-5 md:columns-4 sm:columns-3 columns-2 md:text-md text-sm text-center">
                 {shuffledWriters.map((person, i) => (
                     <li key={i}>{person}</li>
                 ))}
@@ -57,8 +49,8 @@ export default function AboutPage() {
                 large portion of the content on these webpages was written by
                 Noah Singer &apos;18 (Github: @singerng) and Noah Kim &apos;18
                 (Github: @noahbkim). Both this website and the grading server
-                are hosted on the Montgomery Blair servers. The code is
-                available on <Link href={REPO_LINK}>GitHub</Link>.
+                are hosted on servers at Montgomery Blair High School. The code
+                is available on <Link href={REPO_LINK}>GitHub</Link>.
             </p>
 
             <Heading level={2}>Sponsors</Heading>
@@ -73,7 +65,7 @@ export default function AboutPage() {
                     )}
                 .
             </p>
-            <div className="flex flex-wrap justify-around gap-2 items-center">
+            <div className="flex flex-wrap justify-around gap-2 items-center bg-white border border-gray-200 py-4">
                 {sponsorList.map(({ name, image, link, width }) => (
                     <Link
                         key={name}
