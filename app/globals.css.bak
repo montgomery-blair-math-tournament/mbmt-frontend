@@ -1,0 +1,25 @@
+:root {
+    --background: #f3f3f3;
+    --foreground: #1a1a1a;
+    --link: var(--color-blue-600);
+    --theme: #ba2222;
+    --theme-foreground: #971c1c;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-theme: var(--theme);
+    --color-theme-foreground: var(--theme-foreground);
+    --color-link: var(--link);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --font-slabo: var(--font-slabo-27px);
+    --font-nunito-sans: var(--font-nunito-sans);
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
