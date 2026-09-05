@@ -82,19 +82,25 @@ function TableRow({ p, index }: { p: PastTest; index: number }) {
         <td key={`${p.year}/${divisionName}/${testName}`} className="p-2">
             {p.tests.includes(testName) ? (
                 <div>
-                    <Link
-                        href={`archive/${p.year}/${divisionName}/${testName}/problems.pdf`}
-                        target="_blank"
-                    >
-                        Problems
-                    </Link>
-                    <br />
-                    <Link
-                        href={`archive/${p.year}/${divisionName}/${testName}/solutions.pdf`}
-                        target="_blank"
-                    >
-                        Solutions
-                    </Link>
+                    {!p.missing?.includes(testName) && (
+                        <>
+                            <Link
+                                href={`archive/${p.year}/${divisionName}/${testName}/problems.pdf`}
+                                target="_blank"
+                            >
+                                Problems
+                            </Link>
+                            <br />
+                        </>
+                    )}
+                    {!p.missing?.includes("solutions") && (
+                        <Link
+                            href={`archive/${p.year}/${divisionName}/${testName}/solutions.pdf`}
+                            target="_blank"
+                        >
+                            Solutions
+                        </Link>
+                    )}
                 </div>
             ) : (
                 "-"

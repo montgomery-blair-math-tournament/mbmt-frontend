@@ -46,7 +46,17 @@ const pastTests = [
         divisions: ["Ramanujan", "Pascal"],
         tests: ["algebra", "geometry", "counting", "nt", "team", "guts"],
     },
-    // skipping pre-2017 tests
+    {
+        year: "2016",
+        divisions: ["Euclid", "Lobachevsky"],
+        tests: ["algebra", "geometry", "counting", "nt", "team", "guts"],
+    },
+    {
+        year: "2015",
+        divisions: ["Euler", "Fermat"],
+        tests: ["algebra", "geometry", "counting", "nt", "team", "guts"],
+        missing: ["solutions"],
+    },
 ];
 
 export default pastTests;
@@ -55,4 +65,5 @@ export type PastTest = {
     divisions: string[]; // string[] with the two divisions [lower, upper]
     tests: string[]; // string[] with a list of the tests for the given test year
     funRound?: string[]; // string[] with a list of the PDF names for the funRound problems
+    missing?: string[];
 };
