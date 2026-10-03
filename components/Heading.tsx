@@ -11,14 +11,17 @@ export default function Heading({
     if (level == 3) {
         return (
             <h3
-                className={cn("text-xl mt-1 font-bold font-sans", className)}
+                className={cn("text-xl mt-1 font-bold font-heading", className)}
                 {...props}
             />
         );
     } else if (level == 2) {
         return (
             <h2
-                className={cn("text-2xl mt-2 font-bold font-sans", className)}
+                className={cn(
+                    "text-2xl mt-2 font-bold font-heading",
+                    className,
+                )}
                 {...props}
             />
         );
@@ -26,7 +29,7 @@ export default function Heading({
         return (
             <h1
                 className={cn(
-                    "text-4xl mt-4 mb-2 font-bold font-sans",
+                    "text-4xl mt-4 mb-2 font-bold font-heading",
                     className,
                 )}
                 {...props}

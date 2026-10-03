@@ -1,10 +1,9 @@
 import Main from "@/components/Main";
-import { DIVISIONS } from "@/lib/constants/settings";
+import { divisions } from "@/lib/constants/settings";
 import Link from "@/components/Link";
 import Heading from "@/components/Heading";
 
 export default function InfoPage() {
-    const lower = DIVISIONS[0].name;
     return (
         <Main>
             <Heading level={1}>Contest Information</Heading>
@@ -76,8 +75,8 @@ export default function InfoPage() {
                 The individual awards are for high-scoring individuals overall
                 and in each subject test. There are also additional awards for
                 high performance on the Guts Round. Finally, we will also
-                recognize the highest-scoring 6th-grade student in the {lower}{" "}
-                Division.
+                recognize the highest-scoring 6th-grade student in the{" "}
+                {divisions.lower} Division.
             </p>
 
             <Heading level={2}>Schedule</Heading>

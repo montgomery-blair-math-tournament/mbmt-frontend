@@ -1,14 +1,11 @@
 import Link from "@/components/Link";
 import Math from "@/components/Math";
 import RedBold from "@/components/RedBold";
-import { DIVISIONS } from "@/lib/constants/settings";
+import { divisions } from "@/lib/constants/settings";
 import Heading from "@/components/Heading";
 import Main from "@/components/Main";
 
 export default function RulesPage() {
-    const lower = DIVISIONS[0].name;
-    const upper = DIVISIONS[1].name;
-
     return (
         <Main>
             <Heading level={1}>Official Rules</Heading>
@@ -38,19 +35,19 @@ export default function RulesPage() {
                     may send.
                 </li>
                 <li>
-                    <RedBold>{`Upper division (${upper}) only`}</RedBold>:
-                    Subject Tests are specifically limited. The goal of this
+                    <RedBold>{`Upper division (${divisions.upper}) only`}</RedBold>
+                    : Subject Tests are specifically limited. The goal of this
                     policy is twofold: to make the subjects more competitive and
                     balanced, and to perhaps introduce other topics of math not
                     normally found in the classroom setting.
                 </li>
                 <ol className="list-decimal ml-8">
                     <li>
-                        Each Upper division ({upper}) team can have no more than
-                        3 tests per subject.
+                        Each Upper division ({divisions.upper}) team can have no
+                        more than 3 tests per subject.
                     </li>
                     <li>
-                        Lower division ({lower}) teams can select any
+                        Lower division ({divisions.lower}) teams can select any
                         combination of subject tests.
                     </li>
                 </ol>
@@ -278,9 +275,9 @@ export default function RulesPage() {
                     <b>top 5 teams</b> in each division will be recognized.
                 </li>
                 <li>
-                    The highest scoring 6th grade student in the <b>{lower}</b>{" "}
-                    (lower) division will receive the <b>Young Scholar Award</b>
-                    .
+                    The highest scoring 6th grade student in the{" "}
+                    <b>{divisions.lower}</b> (lower) division will receive the{" "}
+                    <b>Young Scholar Award</b>.
                 </li>
             </ol>
             <p>
