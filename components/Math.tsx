@@ -1,9 +1,8 @@
 import "katex/dist/katex.min.css";
-import Latex from "react-latex-next";
-export default function Math({ eq, raw }: { eq: string; raw?: boolean }) {
-    if (raw) {
-        return <Latex>{eq}</Latex>;
-    } else {
-        return <Latex>{`$${eq}$`}</Latex>;
-    }
+import katex from "katex";
+
+export default function Math({ eq }: { eq: string }) {
+    return (
+        <span dangerouslySetInnerHTML={{ __html: katex.renderToString(eq) }} />
+    );
 }
