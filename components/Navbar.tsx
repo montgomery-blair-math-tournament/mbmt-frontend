@@ -17,7 +17,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const onScroll = () => {
-            setIsScrolled(window.scrollY > 30);
+            setIsScrolled(window.scrollY > 50);
         };
 
         onScroll();
@@ -33,9 +33,10 @@ export default function Navbar() {
         <nav className="sticky top-0 z-50">
             <div
                 className={cn(
-                    "flex gap-1 md:gap-2 w-full p-2 md:p-3 transition-all bg-theme duration-300 text-white items-center",
+                    "flex gap-1 md:gap-2 w-full p-2 md:p-3 transition-all bg-theme duration-250 text-white items-center",
                     {
-                        "bg-theme/75 backdrop-blur-md border-b": isScrolled,
+                        "bg-white/50 text-theme backdrop-blur-lg border-b border-theme":
+                            isScrolled,
                     },
                 )}
             >

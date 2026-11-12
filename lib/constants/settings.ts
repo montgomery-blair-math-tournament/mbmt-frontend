@@ -14,8 +14,5 @@ export const DIVISIONS: Record<string, Division> = {
     },
 };
 
-export const REGISTRATION_FORM_LINK: string =
-    "https://docs.google.com/forms/d/e/1FAIpQLSfXBDg700tBiwaJcIGGP5cS6liuRKGYhmoq2HqiCyrCE1Owhw/viewform";
-
 export const REPO_LINK: string =
     "https://github.com/montgomery-blair-math-tournament/mbmt-frontend";
