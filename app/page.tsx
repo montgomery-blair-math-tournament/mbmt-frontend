@@ -17,9 +17,9 @@ export default function Home() {
                         the Maryland area
                     </p>
                     <p className="text-center">
-                        MBMT 11 was held on March 8, 2026. See problems and
-                        solutions on our <Link href="/archive">archive</Link>{" "}
-                        page.
+                        <b>MBMT 12 will be held on March 7, 2027</b>. Register{" "}
+                        <Link href="/register">here</Link> for the upcoming
+                        competition!
                     </p>
                 </div>
             </div>
