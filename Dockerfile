@@ -1,8 +1,6 @@
 FROM node:lts-alpine AS base
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME/bin:$PATH"
 ENV NEXT_TELEMETRY_DISABLED=true
-RUN corepack enable
+RUN npm install -g pnpm
 COPY . /app
 WORKDIR /app
 COPY package.json pnpm-lock.yaml* pnpm-workspace.yaml ./

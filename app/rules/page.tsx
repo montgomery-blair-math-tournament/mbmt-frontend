@@ -1,25 +1,22 @@
 import Link from "@/components/Link";
 import Math from "@/components/Math";
 import RedBold from "@/components/RedBold";
-import { DIVISIONS } from "@/lib/constants/settings";
 import Heading from "@/components/Heading";
 import Main from "@/components/Main";
+import { DIVISIONS } from "@/lib/constants/settings";
 
 export default function RulesPage() {
-    const lower = DIVISIONS[0].name;
-    const upper = DIVISIONS[1].name;
-
     return (
         <Main>
             <Heading level={1}>Official Rules</Heading>
 
             <p>
-                <i>Last updated 07/01/2026</i>
+                <i>Last updated 11/12/2026</i>
             </p>
 
             <p>
-                Welcome to the eleventh annual Montgomery Blair Math Tournament,
-                or MBMT XI for short! MBMT is a free middle school math contest
+                Welcome to the twelfth annual Montgomery Blair Math Tournament,
+                or MBMT 12 for short! MBMT is a free middle school math contest
                 that seeks to inspire students&apos; interest in mathematics and
                 to encourage them to explore math beyond the school curriculum.
                 Contest details can be found on the{" "}
@@ -38,22 +35,22 @@ export default function RulesPage() {
                     may send.
                 </li>
                 <li>
-                    <RedBold>{`Upper division (${upper}) only`}</RedBold>:
-                    Subject Tests are specifically limited. The goal of this
+                    <RedBold>{`Upper division (${DIVISIONS.upper.name}) only`}</RedBold>
+                    : Subject Tests are specifically limited. The goal of this
                     policy is twofold: to make the subjects more competitive and
                     balanced, and to perhaps introduce other topics of math not
                     normally found in the classroom setting.
                 </li>
-                <ol className="list-decimal ml-8">
+                <ul className="list-disc ml-8">
                     <li>
-                        Each Upper division ({upper}) team can have no more than
-                        3 tests per subject.
+                        Each Upper division ({DIVISIONS.upper.name}) team can
+                        have no more than 3 tests per subject.
                     </li>
                     <li>
-                        Lower division ({lower}) teams can select any
-                        combination of subject tests.
+                        Lower division ({DIVISIONS.lower.name}) teams can select
+                        any combination of subject tests.
                     </li>
-                </ol>
+                </ul>
 
                 <li>
                     If there are fewer than 5 students interested in
@@ -246,10 +243,10 @@ export default function RulesPage() {
             <p>
                 Further clarifications on terminology, notation, and acceptable
                 answer forms can be found at{" "}
-                <Link href="/files/Conventions.pdf">
+                <Link href="/files/Conventions.pdf" target="_blank">
                     the conventions document linked here
-                </Link>
-                .
+                </Link>{" "}
+                (opens in a new tab).
             </p>
 
             <Heading level={2}>Scoring and Awards</Heading>
@@ -278,18 +275,18 @@ export default function RulesPage() {
                     <b>top 5 teams</b> in each division will be recognized.
                 </li>
                 <li>
-                    The highest scoring 6th grade student in the <b>{lower}</b>{" "}
-                    (lower) division will receive the <b>Young Scholar Award</b>
-                    .
+                    The highest scoring 6th grade student in the{" "}
+                    <b>{DIVISIONS.lower.name}</b> (lower) division will receive
+                    the <b>Young Scholar Award</b>.
                 </li>
             </ol>
             <p>
                 A more detailed guide to the scoring algorithm we use can be
                 found at{" "}
-                <Link href="/files/Scoring.pdf">
+                <Link href="/files/Scoring.pdf" target="_blank">
                     the scoring document linked here
-                </Link>
-                .
+                </Link>{" "}
+                (opens in a new tab).
             </p>
         </Main>
     );

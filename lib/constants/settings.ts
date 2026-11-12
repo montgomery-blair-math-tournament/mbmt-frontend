@@ -3,16 +3,14 @@ interface Division {
     prefix: string;
 }
 
-export const CURRENT_YEAR: number = 2025;
-
-export const DIVISIONS: Record<number, Division> = {
-    0: {
-        name: "Abel",
-        prefix: "A",
+export const DIVISIONS: Record<string, Division> = {
+    lower: {
+        name: "Stokes",
+        prefix: "S",
     },
-    1: {
-        name: "Jacobi",
-        prefix: "J",
+    upper: {
+        name: "Eratosthenes",
+        prefix: "E",
     },
 };
 

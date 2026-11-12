@@ -4,53 +4,55 @@ import Link from "@/components/Link";
 import Heading from "@/components/Heading";
 
 export default function InfoPage() {
-    const lower = DIVISIONS[0].name;
     return (
         <Main>
             <Heading level={1}>Contest Information</Heading>
             <p>
-                <i>Last updated 07/01/2026</i>
+                <i>Last updated 11/12/2026</i>
             </p>
 
             <p>
                 MBMT is a free middle school math competition that seeks to
                 excite students’ interests in mathematics and in pursuing
                 mathematics beyond the school curriculum. We are pleased to
-                announce that, for the 2026 year, the Montgomery Blair Math Team
-                hosted the 11th Montgomery Blair Math Tournament (MBMT 11) on
-                March 8th, 2026!
+                announce that, for the upcoming year, the Montgomery Blair Math
+                Team will be hosting the 12th annual Montgomery Blair Math
+                Tournament (MBMT 12) on <b>March 7th, 2027</b>!
             </p>
 
             <Heading level={2}>Registration</Heading>
             <p>
-                Registration opened on <b>Wednesday, December 17th, 2025</b>,
-                and closed on <b>Saturday, February 7th, 2026</b>.
+                <b>Registration is open!</b> (closes February 7th, 2027). See
+                the <Link href="/register">registration page</Link> to fill out
+                the form.
             </p>
 
             <Heading level={2}>Logistics</Heading>
             <p>
-                MBMT 11 occurred at Montgomery Blair High School on Sunday,
-                March 8th, 2026 from 11:00 am - 5:00 pm. Our address is{" "}
+                MBMT 12 will occur at Montgomery Blair High School on Sunday,
+                March 7th, 2027 from 11:00 am - 5:00 pm. Our address is{" "}
                 <Link href="https://goo.gl/maps/QUudw1ir4JPsHSL98">
                     51 University Blvd E, Silver Spring, MD 20901
                 </Link>
-                . Thanks to the generosity of the{" "}
+                .
+                {/* Thanks to the generosity of the{" "}
                 <Link href="https://www.montgomeryschoolsmd.org/departments/food-and-nutrition/">
                     MCPS Division of Food & Nutrition Services
                 </Link>
                 , <b>free</b> lunch was provided to all competitors and coaches.
                 Coaches and participants are encouraged to bring snacks for
-                their teams.
+                their teams. */}
             </p>
 
             <Heading level={2}>Contest</Heading>
             <p>
                 MBMT consists of four rounds: Individual Round, Team Round, Guts
-                Round, and Fun Round. Both the Abel (lower) and Jacobi (upper)
-                divisions will take Individual Subject Tests (of which students
-                take two subjects among Algebra, Geometry, Counting and
-                Probability, and Number Theory). Each Individual Subject Test
-                consists of eight questions and lasts thirty minutes.
+                Round, and Fun Round. Both the {DIVISIONS.lower.name} (lower)
+                and {DIVISIONS.upper.name} (upper) divisions will take
+                Individual Subject Tests (of which students take two subjects
+                among Algebra, Geometry, Counting and Probability, and Number
+                Theory). Each Individual subject test consists of eight
+                questions and lasts thirty minutes.
             </p>
             <p>
                 The Team Round has fifteen questions for all team members to
@@ -76,8 +78,8 @@ export default function InfoPage() {
                 The individual awards are for high-scoring individuals overall
                 and in each subject test. There are also additional awards for
                 high performance on the Guts Round. Finally, we will also
-                recognize the highest-scoring 6th-grade student in the {lower}{" "}
-                Division.
+                recognize the highest-scoring 6th-grade student in the{" "}
+                {DIVISIONS.lower.name} Division.
             </p>
 
             <Heading level={2}>Schedule</Heading>
@@ -161,7 +163,7 @@ export default function InfoPage() {
                 <Link href="mailto:Jeremy_R_Schwartz@mcpsmd.org">
                     Jeremy_R_Schwartz@mcpsmd.org
                 </Link>
-                . We look forward to seeing you and your Mathletes at next
+                . We look forward to seeing you and your Mathletes at this
                 year&apos;s MBMT!
             </p>
         </Main>

@@ -8,7 +8,11 @@ export default function ArchivePage() {
         <Main>
             <Heading level={1}>Test Archive</Heading>
             <p>
-                Here we&apos;re keeping all of past year&apos;s problems and
+                <i>Last updated 11/12/2026</i>
+            </p>
+
+            <p>
+                Here we&apos;re keeping all of previous years&apos; problems and
                 solutions, as well as contest results. Some years might be
                 missing a round since we haven&apos;t done every round every
                 year. In each year, the more difficult division is listed

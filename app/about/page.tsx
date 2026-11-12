@@ -18,6 +18,9 @@ export default function AboutPage() {
     return (
         <Main>
             <Heading level={1}>About Us</Heading>
+            <p>
+                <i>Last updated 04/01/2026</i>
+            </p>
 
             <p>
                 MBMT is proudly organized and executed entirely by students from
