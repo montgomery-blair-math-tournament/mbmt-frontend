@@ -1,12 +1,7 @@
-"use client";
-
 import { cn } from "@/lib/cn";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Navbar() {
-    const [isScrolled, setIsScrolled] = useState(false);
-
     const links = [
         { name: "About", href: "/about", order: 0 },
         { name: "Archive", href: "/archive", order: 3 },
@@ -14,16 +9,6 @@ export default function Navbar() {
         { name: "Rules", href: "/rules", order: 1 },
         { name: "Register", href: "/register", order: 10000, right: true },
     ];
-
-    useEffect(() => {
-        const onScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-
-        onScroll();
-        window.addEventListener("scroll", onScroll, { passive: true });
-        return () => window.removeEventListener("scroll", onScroll);
-    }, []);
 
     const linkStyle = cn(
         "select-none transition-all duration-300 bg-linear-to-r from-current to-current bg-no-repeat bg-bottom bg-size-[0%_2px] hover:bg-size-[100%_2px] ease-out",
@@ -34,10 +19,6 @@ export default function Navbar() {
             <div
                 className={cn(
                     "flex gap-1 md:gap-2 w-full p-2 md:p-3 transition-all bg-theme duration-250 text-white items-center",
-                    {
-                        "bg-white/50 text-theme backdrop-blur-lg border-b border-theme":
-                            isScrolled,
-                    },
                 )}
             >
                 <Link
