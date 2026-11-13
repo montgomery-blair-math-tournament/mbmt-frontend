@@ -60,20 +60,35 @@ export default function AboutPage() {
             <p>
                 MBMT is sponsored by the following organizations:{" "}
                 {sponsorList
-                    .map(({ name }) => name + ", ")
+                    .map(({ name, link }) => (
+                        <span key={name}>
+                            <Link href={link} target="_blank">
+                                {name}
+                            </Link>
+                            ,{" "}
+                        </span>
+                    ))
                     .toSpliced(
                         -1,
                         1,
-                        "and " + sponsorList[sponsorList.length - 1].name,
+                        <span key={sponsorList[sponsorList.length - 1].name}>
+                            and{" "}
+                            <Link
+                                href={sponsorList[sponsorList.length - 1].link}
+                                target="_blank"
+                            >
+                                {sponsorList[sponsorList.length - 1].name}
+                            </Link>
+                        </span>,
                     )}
                 .
             </p>
-            <div className="flex flex-wrap justify-around gap-2 items-center bg-white border border-gray-200 py-4">
+            <div className="flex flex-wrap justify-around gap-2 items-center bg-white md:border border-gray-200 py-4 px-2">
                 {sponsorList.map(({ name, image, link, width }) => (
                     <Link
                         key={name}
                         href={link}
-                        className="h-fit bg-white"
+                        className="h-fit bg-white p-2 hover:outline-1"
                         target="_blank"
                     >
                         <Image src={image} alt={`${name} logo`} width={width} />
